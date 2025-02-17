@@ -33,13 +33,15 @@
             this.txtBang = new System.Windows.Forms.TextBox();
             this.lstBCC = new System.Windows.Forms.ListBox();
             this.btnTinh = new System.Windows.Forms.Button();
+            this.lstToanBo = new System.Windows.Forms.ListBox();
+            this.btnTB = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(139, 42);
+            this.label1.Location = new System.Drawing.Point(139, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(352, 19);
             this.label1.TabIndex = 0;
@@ -49,7 +51,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 91);
+            this.label2.Location = new System.Drawing.Point(39, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(140, 19);
             this.label2.TabIndex = 1;
@@ -57,7 +59,7 @@
             // 
             // txtBang
             // 
-            this.txtBang.Location = new System.Drawing.Point(194, 88);
+            this.txtBang.Location = new System.Drawing.Point(185, 37);
             this.txtBang.Name = "txtBang";
             this.txtBang.Size = new System.Drawing.Size(100, 27);
             this.txtBang.TabIndex = 2;
@@ -73,19 +75,40 @@
             // 
             // btnTinh
             // 
-            this.btnTinh.Location = new System.Drawing.Point(321, 88);
+            this.btnTinh.Location = new System.Drawing.Point(52, 88);
             this.btnTinh.Name = "btnTinh";
-            this.btnTinh.Size = new System.Drawing.Size(112, 67);
+            this.btnTinh.Size = new System.Drawing.Size(112, 38);
             this.btnTinh.TabIndex = 4;
             this.btnTinh.Text = "Tạo";
             this.btnTinh.UseVisualStyleBackColor = true;
             this.btnTinh.Click += new System.EventHandler(this.btnTinh_Click);
+            // 
+            // lstToanBo
+            // 
+            this.lstToanBo.FormattingEnabled = true;
+            this.lstToanBo.ItemHeight = 19;
+            this.lstToanBo.Location = new System.Drawing.Point(318, 136);
+            this.lstToanBo.Name = "lstToanBo";
+            this.lstToanBo.Size = new System.Drawing.Size(255, 213);
+            this.lstToanBo.TabIndex = 5;
+            // 
+            // btnTB
+            // 
+            this.btnTB.Location = new System.Drawing.Point(318, 88);
+            this.btnTB.Name = "btnTB";
+            this.btnTB.Size = new System.Drawing.Size(126, 38);
+            this.btnTB.TabIndex = 6;
+            this.btnTB.Text = "Toàn bộ";
+            this.btnTB.UseVisualStyleBackColor = true;
+            this.btnTB.Click += new System.EventHandler(this.btnTB_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 365);
+            this.Controls.Add(this.btnTB);
+            this.Controls.Add(this.lstToanBo);
             this.Controls.Add(this.btnTinh);
             this.Controls.Add(this.lstBCC);
             this.Controls.Add(this.txtBang);
@@ -107,6 +130,8 @@
         private System.Windows.Forms.TextBox txtBang;
         private System.Windows.Forms.ListBox lstBCC;
         private System.Windows.Forms.Button btnTinh;
+        private System.Windows.Forms.ListBox lstToanBo;
+        private System.Windows.Forms.Button btnTB;
     }
 }
 

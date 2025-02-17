@@ -26,12 +26,25 @@ namespace WindowsFormsApp1
         {
             lstBCC.Items.Clear();
             int so = Convert.ToInt32(txtBang.Text);
-
+           
             for (int i = 1; i <= 10; i++)
             {
-                lstBCC.Items.Add(so + " x " + i + " = " + so*i);
+                lstBCC.Items.Add(so + " x " + i + " = " + so * i);
             }
+        }
 
+        private void btnTB_Click(object sender, EventArgs e)
+        {
+            int tbso;
+
+            for (int i = 2; i <= 10; i++)
+            {
+
+                for (tbso = 1; tbso <= 10; tbso++)
+                {
+                    lstToanBo.Items.Add(i + " x " + tbso + " = " + tbso * i);
+                }
+            }
         }
     }
 }
